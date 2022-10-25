@@ -1,1 +1,44 @@
-/* start your css here */
+*{
+  box-sizing: border-box;
+  margin-top: 0;
+}
+body{
+  display:flex;
+  flex-direction: column;
+  justify-content:center; 
+  align-items:center;          
+}
+.color-container{
+  display: flex;
+  /* border: 2px solid black; */
+}
+.first{
+  background: #696969;
+  width:300px;
+  height: 180px;
+  text-align:center;
+  font-size: 70px;
+  color:whitesmoke;
+  padding:50px;
+}
+.second{
+  width:150px;
+  height: 180px;
+  position: absolute;
+  transform: skew(-20deg);
+  background: #2F4F4F;
+  margin-left: -70px;
+  text-align: center;
+  font-size: 70px;
+  color:white;
+  padding:50px;
+}
+.third{
+  padding:50px;
+  background: black;
+  width:300px;
+  height: 180px;
+  text-align:center;
+  font-size: 70px;
+  color:rgb(141, 141, 241);
+}
