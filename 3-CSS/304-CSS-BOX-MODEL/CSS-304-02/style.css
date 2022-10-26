@@ -24,12 +24,6 @@ input[type=number]::-webkit-outer-spin-button {
     width: 30px;
     border-radius: 25px;
 }
-#date{
-    background: url(date.jpg) no-repeat right center;
-    background-size: 2.0rem 2.0rem;
-    background-color: white;
-    padding-right: 10px;
-}
 .button{
     display: flex;
     justify-content: center;
