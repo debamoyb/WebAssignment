@@ -53,3 +53,10 @@ https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-css-flexbox-
 # INSTRUCTIONS
 - Complete all above assignments in their respective folders
 - Html should be in ```index.html``` file and styling should be in ```style.css``` file
+- Hosted Link :- 
+- CSS-305-01 :- https://debamoyb.github.io/WebAssignment/3-CSS/305-CSS-Flexbox/CSS-305-01/index.html
+- CSS-305-02 :- https://debamoyb.github.io/WebAssignment/3-CSS/305-CSS-Flexbox/CSS-305-02/index.html
+- CSS-305-03 :- https://debamoyb.github.io/WebAssignment/3-CSS/305-CSS-Flexbox/CSS-305-03/index.html
+- CSS-305-04 :- https://debamoyb.github.io/WebAssignment/3-CSS/305-CSS-Flexbox/CSS-305-04/index.html
+- CSS-305-05 :- https://debamoyb.github.io/WebAssignment/3-CSS/305-CSS-Flexbox/CSS-305-05/index.html
+- CSS-305-06 :- https://debamoyb.github.io/WebAssignment/3-CSS/305-CSS-Flexbox/CSS-305-06/index.html
