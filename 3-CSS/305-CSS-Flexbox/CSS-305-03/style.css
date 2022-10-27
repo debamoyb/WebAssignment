@@ -9,7 +9,7 @@
     justify-content: center;
 }
 .firstbox{
-    width:30%;
+    width:25%;
     height: 350px;
     background-color: #E38826;
     border-radius: 10px 0 0 10px;
@@ -19,7 +19,7 @@
     padding:40px;
 }
 .secondbox{
-    width:30%;
+    width:25%;
     height: 350px;
     background-color: #006970;
     display: flex;
@@ -28,7 +28,7 @@
     padding:40px;
 }
 .thirdbox{
-    width:30%;
+    width:25%;
     height: 350px;
     background-color: #004241;
     border-radius: 0 10px 10px 0;
@@ -47,8 +47,7 @@ p{
 button{
     border:none;
     width: 100px;
-    height: 50px;
-    color: transparent;
+    height: 40px;
     border-radius: 25px 25px 25px 25px;
 }
 .icon{
