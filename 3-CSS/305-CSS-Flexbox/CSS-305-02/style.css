@@ -12,13 +12,13 @@
 .main-container{
     width:260px;
     height: 220px;
-    background-color: rgb(230, 71, 97);
+    background-color: rgb(237, 72, 112);
     border-radius: 8px;
     padding:10px;
     box-shadow: 0px 4px rgba(0,0,0,0.5);
 }
 .onoff{
-    background-color: rgb(226, 226, 9);
+    background-color: rgb(255, 209, 104);
 }
 header{
     padding:0 6px 6px 5px;
@@ -28,12 +28,12 @@ header{
 input{
     width:150px;
     border-radius: 10px;
-    background-color: rgba(122, 38, 201, 0.863);
+    background-color: rgba(38, 84, 123, 0.863);
     border:none;
 }
 button{
     font-size: 20px;
-    background-color:rgba(122, 38, 201, 0.863);
+    background-color:rgba(38, 84, 123, 0.863);
     width: 52px;
     height: 30px;
     margin:2px;
