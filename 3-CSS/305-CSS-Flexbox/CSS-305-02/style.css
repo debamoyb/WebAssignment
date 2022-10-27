@@ -37,6 +37,7 @@ input{
     border-radius: 10px;
     background-color: rgba(38, 84, 123, 0.863);
     border:none;
+    color: #fff;
 }
 button{
     font-size: 15px;
