@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 .main{
-    background-color:rgba(122, 38, 201, 0.863); 
+    background-color:rgba(38, 84, 123, 0.863); 
     width:300px; 
     height: 250px; 
     display: flex; 
