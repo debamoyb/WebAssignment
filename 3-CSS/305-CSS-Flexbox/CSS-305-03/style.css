@@ -48,6 +48,7 @@ button{
     border:none;
     width: 100px;
     height: 100px;
+    color: transparent;
     border-radius: 25px 25px 25px 25px;
 }
 .icon{
