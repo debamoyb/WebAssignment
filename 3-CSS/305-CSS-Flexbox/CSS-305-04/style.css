@@ -37,7 +37,7 @@
 }
 .link{
     justify-content: flex-end;
-    min-width: 137px;
+    min-width: 100px;
     display: flex;
 }
 .logo{
@@ -69,7 +69,7 @@ a, img{
     justify-content: flex-start;
     height: 100%;
     min-width: 304px;
-    width: calc(100% - 540px);
+    width: calc(100% - 450px);
     margin: 0 auto 0 12px;
     align-items: center;
 }
@@ -78,7 +78,7 @@ a, img{
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 23%);
     width: 100%;
     height: 36px;
-    max-width: 564px;
+    max-width: 454px;
     position: relative;
 }
 .search-div{
@@ -103,8 +103,6 @@ a, img{
     width: 100%;
 }
 .search-button{
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
     justify-content: flex-end;
     border: 1px solid #fff;
     background-color: #fff;
@@ -123,7 +121,7 @@ a, img{
 .nav-link{
     display: flex;
     flex: 0 0 auto;
-    margin: 0 20px;
+    margin: 0 30px;
     max-width: 150px;
     align-content: center;
     justify-content: flex-end;
@@ -197,6 +195,7 @@ a, img{
     font-size: 16px;
     letter-spacing: .1px;
     font-weight: 500;
+    margin-right: 120px;
     color: #fff;
     position: relative;
 }
