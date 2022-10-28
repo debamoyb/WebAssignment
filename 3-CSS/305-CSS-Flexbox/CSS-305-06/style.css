@@ -1,1 +1,121 @@
-/* start your styling here  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    width:100%;
+    height:100%;
+    padding:0 0 0 110px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 1075px;
+}
+.logo{
+    display: flex;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    gap:25px;
+    margin-top: 15px;
+}
+.icon{
+    margin-left: 12px;
+}
+.iconnames{
+    margin:0;
+    color:gray;
+}
+.join{
+    color:rgb(135, 90, 86); 
+    font-size: 15px;
+    margin-top: 20px;
+}
+.signin{
+    height: 50px;
+    width: 90px;
+    margin-top: 5px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border: 1px solid black;
+    border-color: #2196F3;
+    color:rgb(41, 119, 201);
+    background-color: white;
+    border-radius: 25px;
+}
+.body-container{
+    padding: 20px 0;
+    width: 1256px;
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    font-size: 56px;
+    color:rgb(157, 109, 96);
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+.login{
+    width: 418px;
+    height: 40px;
+}
+.declaration{
+    margin: 12px 0;
+    font-size: 0.85rem;
+}
+.declaration a, .already{
+    text-decoration: none; 
+    color:rgb(41, 119, 201); 
+    font-weight: 500;
+}
+.agree-join{
+    background-color: #2977C9;
+    border:none;
+    width:408px;
+    height:56px;
+    border-radius: 28px;
+    color:white;
+    text-decoration: none;
+}
+.up-down-divider::after {
+    display: flex;
+    height: 45px;
+    width: 1px;
+    margin: 5px 0 5px 0;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.35);
+    text-align: center;
+    content: '';
+}
+.left-right-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.my-2 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-right: 130px;
+}
+.text-color-text-low-emphasis {
+    color: rgba(0, 0, 0, 0.6);
+}
+.px-2 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.left-right-divider::before, .left-right-divider::after {
+    height: 1px;
+    width: 4px;
+    background-color: rgba(0, 0, 0, 0.35);
+    content: '';
+    flex-grow: 1;
+}
+.image{
+    width: 655px;
+    height: 530px;
+}
