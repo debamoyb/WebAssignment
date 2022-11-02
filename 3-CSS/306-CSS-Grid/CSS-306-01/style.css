@@ -1,1 +1,111 @@
-/* start your styling here  */
+*{
+    box-sizing: border-box;
+    margin: 0px ;
+    padding: 0px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+.container{
+    height: 90vh;
+    width: 90vw;
+    border: 5px solid #29343D;
+    display: flex;
+    margin-top: 34px;
+}
+.col1{
+    width: 16%;
+    height: 100%;
+}
+.col2{
+    width: 55%;
+    height: 100%;
+}
+.col3{
+    width: 32%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.smallbox{
+    height: 25%;
+    width: 100%;
+    border: 5px solid #29343D;
+    background: linear-gradient(to right top, #FEEDAC, #FB7EB3);
+}
+.mediumtop{
+    height: 50%;
+    width: 100%;
+}
+.mediumbottom{
+    height: 50%;
+    width: 100%;
+}
+.medbottom1{
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+.medbottom2{
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+.medbox{
+    height: 100%;
+    width: 50%;
+    border: 5px solid #29343D;
+    background: linear-gradient(to right top, #FEE6AC, #FB7EB3);
+}
+.medium1{
+    border: 5px solid #29343D;
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(to right top, #71C2FB, #79EBE0);
+}
+.medium2{
+    border: 5px solid #29343D;
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(to right top, #79EBE0, #71C2FB);
+}
+.biggestbox1{
+    height: 50%;
+    width: 100%;
+    border: solid 5px #29343D;
+    background: linear-gradient(to right top, #CCABFB, #FB7EF6);
+}
+.biggestbox2{
+    width: 100%;
+    height: 50%;
+    border: 5px solid #29343D;
+    display: flex;
+}
+.bigleft{
+    width: 32%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-right: 5px solid #29343D;
+}
+.bigright{
+    width: 73%;
+    height: 100%;
+    border-left: 5px solid #29343D;
+    background: linear-gradient(to right top, #FB7EF6, #CCABFB);
+}
+.bigleft1{
+    width: 100%;
+    height: 100%;
+    border-bottom: 5px solid #29343D;
+    background: linear-gradient(to right top, #FEE6AC, #FB7EB3);
+}
+.bigleft2{
+    width: 100%;
+    height: 100%;
+    border-top: 5px solid #29343D;
+    background: linear-gradient(to right top, #FEE6AC, #FB7EB3);
+}
