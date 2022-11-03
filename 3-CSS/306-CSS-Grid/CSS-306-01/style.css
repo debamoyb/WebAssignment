@@ -16,96 +16,129 @@ body{
     display: flex;
     margin-top: 34px;
 }
-.col1{
+.col-1{
     width: 16%;
     height: 100%;
 }
-.col2{
+.col-2{
     width: 55%;
     height: 100%;
 }
-.col3{
+.col-3{
     width: 32%;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
-.smallbox{
+.box-S{
     height: 25%;
     width: 100%;
     border: 5px solid #29343D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(to right top, #FEEDAC, #FB7EB3);
 }
-.mediumtop{
+.up-M{
     height: 50%;
     width: 100%;
 }
-.mediumbottom{
+.down-M{
     height: 50%;
     width: 100%;
 }
-.medbottom1{
-    height: 50%;
-    width: 100%;
-    display: flex;
-}
-.medbottom2{
+.bot-M1{
     height: 50%;
     width: 100%;
     display: flex;
 }
-.medbox{
+.bot-M2{
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+.box-M{
     height: 100%;
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 5px solid #29343D;
     background: linear-gradient(to right top, #FEE6AC, #FB7EB3);
 }
-.medium1{
+.med-R1{
     border: 5px solid #29343D;
     height: 50%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(to right top, #71C2FB, #79EBE0);
 }
-.medium2{
+.med-R2{
     border: 5px solid #29343D;
     height: 50%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(to right top, #79EBE0, #71C2FB);
 }
-.biggestbox1{
+.box-L1{
     height: 50%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: solid 5px #29343D;
     background: linear-gradient(to right top, #CCABFB, #FB7EF6);
 }
-.biggestbox2{
+.box-L2{
     width: 100%;
     height: 50%;
     border: 5px solid #29343D;
     display: flex;
 }
-.bigleft{
+.box-Left{
     width: 32%;
     height: 100%;
     display: flex;
     flex-direction: column;
     border-right: 5px solid #29343D;
 }
-.bigright{
+.box-R{
     width: 73%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-left: 5px solid #29343D;
     background: linear-gradient(to right top, #FB7EF6, #CCABFB);
 }
-.bigleft1{
+.box-Left1{
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-bottom: 5px solid #29343D;
     background: linear-gradient(to right top, #FEE6AC, #FB7EB3);
 }
-.bigleft2{
+.box-Left2{
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-top: 5px solid #29343D;
     background: linear-gradient(to right top, #FEE6AC, #FB7EB3);
+}
+.fa-solid{
+    color: white;
+}
+.bar{
+    width:2px; 
+    height:4px; 
+    background-color: rgb(146, 145, 145); 
+    position: absolute;
 }
