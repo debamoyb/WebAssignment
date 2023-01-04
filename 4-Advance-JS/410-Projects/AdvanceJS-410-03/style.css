@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#main_heading, #sub_heading{
+    margin-top: 20px;
+}
+#user_input{
+    margin-top: 35px;
+    width: 450px;
+}
+.image_container{
+     margin-top: 30px;
+     width: 80vw;
+     flex-wrap: wrap;
+     display: flex;
+     gap: 20px;
+     justify-content: center;
+}
+#img{
+    width: 150px;
+    height: 150px;
+}
