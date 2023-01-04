@@ -4,9 +4,76 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    Start your code here
+    <div id="action_container">
+      <h1 id="heading">Weather Application</h1>
+      <h3 id="sub_heading">Know the weather without visiting the place</h3>
+      <input id="search_input" type="text" placeholder="location" />
+      <button id="search_button">View</button>
+    </div>
+    <div id="info_container">
+      <h1 style="margin-bottom: 16px;" id="city_name">CITY</h1>
+      <img src="http://openweathermap.org/img/wn/04n@2x.png" id="weather_image" />
+      <h2 id="temperature">0&deg;</h2>
+      <h4 id="season">Season</h4>
+      <div id="weather_info">
+        <div id="wind_info">
+          <h3>Wind</h3>
+          <h1 id="wind_speed">0<span class="unit">km</span></h1>
+        </div>
+        <div id="humidity_info">
+          <h3>Humidity</h3>
+          <h1 id="humidity">0<span class="unit">%</span></h1>
+        </div>
+        <div id="precipitation_info">
+          <h3>Pressure</h3>
+          <h1 id="pressure">0<span class="unit">hpa</span></h1>
+        </div>
+      </div>
+    </div>
+    <script>
+      const search_input = document.getElementById("search_input");
+      const search_button = document.getElementById("search_button");
+      const weather_image = document.getElementById("weather_image");
+      const temperature = document.getElementById("temperature");
+      const season = document.getElementById("season");
+      const windSpeed = document.getElementById("wind_speed");
+      const humidity = document.getElementById("humidity");
+      const pressure = document.getElementById("pressure");
+      const city_name = document.getElementById("city_name");
+
+      init();
+
+      function init() {
+          search_button.addEventListener("click", fetchwhether);
+      }
+
+      async function fetchwhether() {
+          let location = search_input.value;
+          const streamResponse = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=e135a33c7a53bcf16ade6978eb700f13`);
+          const textBody = await streamResponse.text();
+          const jsonData = JSON.parse(textBody);
+          const weather_icon = jsonData.weather[0].icon;
+          const temperature_value1 = jsonData.main.temp;
+          const temperature_value = (temperature_value1 - 273.15).toFixed(0);
+          const cloud_description = jsonData.weather[0].description;
+          const wind_speed = jsonData.wind.speed;
+          const humidity_value = jsonData.main.humidity;
+          const pressure_value = jsonData.main.pressure;
+
+          weather_image.setAttribute("src", `http://openweathermap.org/img/wn/${weather_icon}@2x.png`)
+          temperature.innerHTML = `${temperature_value}&deg;C`
+          season.innerText = cloud_description;
+          windSpeed.innerHTML = wind_speed + `<span class="unit">km</span>`;
+          humidity.innerHTML = humidity_value + `<span class="unit">%</span>`;
+          pressure.innerHTML = pressure_value + `<span class="unit">hpa</span>`;
+          city_name.innerText = location.toUpperCase();
+      }
+      // https://api.openweathermap.org/data/2.5/weather?q=pune&appid=e135a33c7a53bcf16ade6978eb700f13
+    </script>
+    
   </body>
 </html>
