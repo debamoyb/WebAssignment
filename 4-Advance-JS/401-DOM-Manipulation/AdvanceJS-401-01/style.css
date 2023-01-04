@@ -16,11 +16,10 @@ div{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
 }
 input{
-    height: 50px;
-    width: 200px;
+    height: 40px;
+    width: 250px;
     border: 2px solid #7dffcb;
     font-size: 24px;
     outline-color: #7dffcb;
