@@ -7,6 +7,31 @@
     <title>Document</title>
   </head>
   <body>
-    Start your code here
+    <div class="main_container">
+      <h1 id="quote"></h1>
+      <h3 id="author_name"></h3>
+      <hr id="hr">
+      <button>Next Quote</button>
+    </div>
+    <script>
+      const button =document.getElementsByTagName("button")[0];
+      const quote = document.getElementById("quote");
+      const author_name =document.getElementById("author_name");
+
+      init();
+
+      function init(){
+        gettherandomquote();
+        button.addEventListener("click", gettherandomquote);
+      }
+
+      async function gettherandomquote(){
+        const streamResponse = await fetch(`https://api.quotable.io/random`);
+        const textBody = await streamResponse.text();
+        const jsonData = JSON.parse(textBody);
+        quote.innerHTML = `<span id="quote_mark">&#8220;</span>${jsonData.content}<span id="quote_mark">&#8221;</span>`;
+        author_name.innerText = '--' + jsonData.author;
+      }
+    </script>
   </body>
 </html>
