@@ -4,9 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Child</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    Start your code here
+    <ul class="has-children">
+      <li class="ch1">1st child</li>
+      <li class="ch2">2nd child</li>
+      <li class="ch3">3rd child</li>
+      <li class="ch4">4th child</li>
+      <li class="ch5">5th child</li>
+      <li class="ch6">6th child</li>
+      <li class="ch7">7th child</li>
+      <li class="ch8">8th child</li>
+      <li class="ch9">9th child</li>
+      <li class="ch10">10th child</li>
+      <li class="ch11">11th child</li>
+      <li class="ch12">12th child</li>
+      <li class="ch13">13th child</li>
+      <li class="ch14">14th child</li>
+      <li class="ch15">15th child</li>
+      <li class="ch16">16th child</li>
+      <li class="ch17">17th child</li>
+    </ul>
+    <script>
+      let childrens = document.querySelectorAll('li');
+      for (let i=0;i<17;i++){
+        if(i%2===0){
+          childrens[i].style.backgroundColor = "lime";
+          childrens[i].style.color = "white";  
+        }
+      }
+      childrens[0].style.backgroundColor = "blue";
+      childrens[0].style.color = "white";
+      childrens[8].style.backgroundColor = "green";
+      childrens[8].style.color = "white";
+      childrens[16].style.backgroundColor = "palevioletred";
+      childrens[16].style.color = "white";
+    </script>
   </body>
 </html>
