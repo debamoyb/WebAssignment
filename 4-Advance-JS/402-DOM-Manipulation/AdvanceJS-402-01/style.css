@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #111;
 }
 main{
     display: flex;
@@ -18,8 +19,8 @@ img{
 .search__input{
     display: flex;
     align-items: center;
-    border: 1px solid lightgray;
-    height: 30px;
+    border: 1px solid rgb(165, 165, 165);
+    height: 45px;
     padding: 10px 20px;
     border-radius: 999px;
     width: 75vw;
@@ -44,7 +45,8 @@ img{
 .search__buttons button{
     margin: 5px;
     padding: 10px 15px;
-    background-color: #f8f9fa;
+    background-color: #222;
+    color: white;
     outline: none;
     border: none;
     cursor: pointer;
@@ -53,9 +55,7 @@ img{
 }
 .search__buttons button:hover{
     box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
-    background-color: #f8f9fa;
-    border: 1px solid #dadce0;
-    color: #202124;
+    border: 1px solid #adaeaf;
 }
 .mic{
     width: 14px;
@@ -80,7 +80,7 @@ input{
     gap: 10px;
 }
 a{
-    color: #1a0dab;
+    color: #9f97f8;
     text-decoration: none;
 }
 a:hover{
