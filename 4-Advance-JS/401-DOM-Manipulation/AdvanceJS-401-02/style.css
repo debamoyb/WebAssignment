@@ -6,10 +6,10 @@
 .has-children{
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    padding-top: 10px;
+    gap: 7px;
 }
 li{
     border: 2px solid black;
