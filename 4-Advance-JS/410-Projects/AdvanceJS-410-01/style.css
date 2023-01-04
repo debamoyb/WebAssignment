@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.main-container{
+    width: 80vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+.app_heading{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    margin-top: 10px;
+}
+.clear_container{
+    width: 60%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin-top: 40px;
+    font-size: 20px;
+}
+button{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(90, 88, 88);
+    border-radius: 5px;
+}
+.input_container{
+    width: 50%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#input{
+    width: 75%;
+    height: 35px;
+}
+.action_container{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.card{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 20%;
+}
+.name_container{
+    color: white;
+}
+#img{
+    width: 70px;
+    height: 60px;
+    border-radius: 50%;
+}
+#gitname{
+    color: gray;
+}
