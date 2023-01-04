@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ff938e, #ffe2c7);
+    height: 100vh;
+}
+.main_container{
+    width: 500px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 5px 2px #ea1d1a;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 32px;
+}
+#quote_mark{
+    color: brown;
+    font-size: 50px;
+}
+button{
+    width: 100px;
+    height: 33px;
+    background: linear-gradient(135deg, rgb(228, 83, 83), rgb(218, 173, 173));
+    border-radius: 6px;
+    color: white;
+}
+#hr{
+    border: 1px solid black;
+}
