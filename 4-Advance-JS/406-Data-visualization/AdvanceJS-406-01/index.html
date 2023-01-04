@@ -4,9 +4,114 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>World Countries</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
   </head>
   <body>
-    Start your code here
+    <div id="heading_actions_container">
+      <h1 id="heading">WORLD COUNTRIES LIST</h1>
+      <span
+        >Total number of countries:
+        <span id="number_of_countires">193</span></span
+      >
+      <br>
+      <span
+        >Countries start with <span id="search_text">S</span> are
+        <span id="filtered_number_of_countries">25</span></span
+      >
+      <br>
+      <br>
+      <div id="actions_container">
+        <button class="select" id="start_word_button">STARTING WORD</button>
+        <button id="anywhere_button">SEARCH WITH ANY WORD</button>
+        <button id="sort_button">
+          <i id="sort_button_icon" class="fa-solid fa-arrow-down-a-z"></i>
+        </button>
+      </div>
+      <div id="search_input_container">
+        <input id="search_input" type="text" placeholder="search country" />
+        <i class="fa-solid fa-search"></i>
+      </div>
+    </div>
+    <div id="country_cards_container">
+        
+    </div>
+    <script src="countries.js"></script>
+    <script>
+      let selectedButton = 'start'
+      let sortOrder = 'asc'
+      const startWordButton = document.getElementById('start_word_button')
+      const anywhereButton = document.getElementById('anywhere_button')
+      const sortButton = document.getElementById('sort_button')
+      const sortButtonIcon = document.getElementById('sort_button_icon')
+      const searchInput = document.getElementById('search_input')
+      const countriesCardsContainer = document.getElementById('country_cards_container')
+      const numberOfCountries = document.getElementById('number_of_countires')
+      const searchText = document.getElementById('search_text')
+      const filteredNumberOfCountries = document.getElementById('filtered_number_of_countries')
+
+      init()
+
+      function init() {
+          numberOfCountries.innerText = countries.length
+          startWordButton.addEventListener('click', function () {
+              selectedButton = 'start'
+              startWordButton.setAttribute('class', 'select')
+              anywhereButton.removeAttribute('class')
+              renderCountries()
+          })
+          anywhereButton.addEventListener('click', function () {
+              selectedButton = 'anywhere'
+              anywhereButton.setAttribute('class', 'select')
+              startWordButton.removeAttribute('class')
+              renderCountries()
+          })
+          sortButton.addEventListener('click', changeSortOrder)
+          searchInput.addEventListener('keyup', renderCountries)
+          renderCountries()
+      }
+
+      function changeSortOrder() {
+          sortOrder = sortOrder === 'asc' ? 'dsc' : 'asc'
+          if (sortOrder === 'asc') {
+              sortButtonIcon.setAttribute('class', 'fa-solid fa-arrow-down-a-z')
+          } else {
+              sortButtonIcon.setAttribute('class', 'fa-solid fa-arrow-up-a-z')
+          }
+          renderCountries()
+      }
+
+      function renderCountries() {
+          const inputValue = searchInput.value
+          searchText.innerText = "'" + inputValue + "'"
+          let countriesCopy = [...countries]
+          if (selectedButton === 'start') {
+              countriesCopy = countriesCopy.filter((country) => {
+                  return country.toLowerCase().startsWith(inputValue.toLowerCase())
+              })
+          } else {
+              countriesCopy = countriesCopy.filter((country) => {
+                  return country.toLowerCase().includes(inputValue.toLowerCase())
+              })
+          }
+          filteredNumberOfCountries.innerText = countriesCopy.length
+          let html = ''
+          if (sortOrder === 'asc') {
+              for (let i = 0; i < countriesCopy.length; i++) {
+                  html += `<div class="country_card">
+                  <h3 class="country_name">${countriesCopy[i]}</h3>
+              </div>`
+              }
+          } else {
+              for (let i = countriesCopy.length - 1; i >= 0; i--) {
+                  html += `<div class="country_card">
+                  <h3 class="country_name">${countriesCopy[i]}</h3>
+              </div>`
+              }
+          }
+          countriesCardsContainer.innerHTML = html
+      }
+    </script>
   </body>
 </html>
