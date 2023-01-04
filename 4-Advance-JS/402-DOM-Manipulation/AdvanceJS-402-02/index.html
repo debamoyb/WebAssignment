@@ -4,9 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Click button</title>
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    Start your code here
+  ><body>
+    <main>
+      <h1> Geekster </h1>
+      <p> Click on the button to add image element </p>
+      <button> click here </button>
+    </main>
+    <script>
+      let button = document.getElementsByTagName('button')[0];
+      let main = document.getElementsByTagName('main')[0];
+      button.addEventListener('click', () =>{
+        let image = document.createElement('div');
+        image.setAttribute('class', 'image');
+        main.appendChild(image);
+        image.innerHTML = ` <h1 style="font-size: 40px"> Image Element Added. </h1>
+        <img src="https://geekster.in/images/logo.svg">`
+        })
+    </script>
   </body>
 </html>
