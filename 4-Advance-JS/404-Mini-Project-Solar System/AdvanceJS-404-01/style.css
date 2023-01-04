@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url('ProjectImage/galaxy.gif');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+h1{
+    color: white;
+    margin-top: 20px;
+    text-shadow: 3px 0 #6b6baf;
+    font-size: 70px;
+    text-align: center;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 10px;
+}
+input{
+    height: 45px;
+    width: 300px;
+    color: #6c6d6d;
+    font-size: large;
+    padding: 10px;
+}
+select{
+    width: 200px;
+    padding-left: 10px;
+    font-size: large;
+    border-radius: 5px;
+    color: #6c6d6d;
+}
+option{
+    color: black;
+}
+button{
+    width: 150px;
+    border-radius: 5px;
+    font-size: large;
+    color: white;
+    background-color: #6c6d6d;
+}
+.planet{
+    height: 70vh;
+    width: 70vw;
+    background-color: #6c6d6d;
+    opacity: 0.4;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.box{
+    height: 70vh;
+    width: 70vw;
+    background-color: #6c6d6d;
+    opacity: 0.4;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+img{
+    height: 99%;
+    width: 99%;
+}
+.weight{
+    height: 40%;
+    width: 50%;
+    background-color: gray;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+h2{
+    color: blue;
+    opacity: none;
+    font-size: 30px;
+}
+.circle{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: rgb(203, 197, 197);
+    font-size: xx-large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+}
+.smallBox, #smallBox{
+    height: 15%;
+    width: 70%;
+    background-color: #6c6d6d;
+    opacity: 0.4;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.miniBox{
+    font-size: xx-large;
+    height: 50%;
+    width: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-weight: bolder;
+}
